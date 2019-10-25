@@ -21,7 +21,7 @@ params = {
     'q':'artificial intelligence',
     'to':yesterday,
     'from':yesterday,
-    'apikey':'962acc6f664a4d6d8bf498496a06d790',
+    'apikey':'<apikey>',
     'lan':'en',
     'pageSize':100
 }
@@ -57,7 +57,7 @@ df.columns =['title','content','url','site','date']
 #Put the data into the google sheet
 #define the scopes
 scopes =['https://www.googleapis.com/auth/spreadsheets']
-credentials = service_account.Credentials.from_service_account_file('C://Users//tmagero//Downloads//idyllic-tendril-256907-d68af7caf5e8.json'
+credentials = service_account.Credentials.from_service_account_file('<path to downloaded credentials.json file>'
 ,scopes=scopes)
 
 
