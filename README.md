@@ -1,17 +1,20 @@
-# automatereporting
-automate reporting using big query. Influenced by Rob Salgado
-This report scrapes news based on the topic "artificial intelligence" from news api and implements BIG QUERY that populates the data on google spreadsheets
+# NEWS API CONTENT AGREGATOR WITH PYTHON AND SHEETS API
 
-*Resources*
-```
-1. NewsAPI 
-2. GCP BIGQUERY
-3. sheetsAPI
-```
-*TODO:*
-```
-1. Create a developer account with NEWSAPI
-2. Create a service account with GCP
-3. Create a service account for sheetsapi on GCP
-4. grant edit rights on a google spreadsheet to the email provided in the credentials file for sheets api
-```
+This project is influenced by Rob Selgado  [](https://medium.com/@robert.salgado/automate-reporting-no-bi-tools-required-40ae049b75ac)**Automate Reporting - No BI Tools Required** 
+
+The aim of the project is build a scraper to [](https://newsapi.org/docs)**News API** that aggregates content based on the topic **Artificial Intelligence** and populate data on google spreadsheets through [](https://developers.google.com/sheets/api)**Sheets API**
+
+# How to Run the project
+
+<ol>
+  <li>Create a developer account with News API </li>
+  <li>Create a serivice account with GCP</li>
+  <li>Create a service account for sheetsapi on GCP</li>
+  <li>Grant edit rights to email provided in the credentials file downloaded from sheets API to the target output gsheet</li>
+  <li>Run production.py scrip</li>
+</ol>
+
+# Automating the project
+
+To automate the project consider using Airflow scheduler where you can set this up as a daily task .
+
